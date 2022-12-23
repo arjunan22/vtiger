@@ -16,8 +16,7 @@ public class LoginCase {
 		WebDriver driver= new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-		
-		FileInputStream fis = new FileInputStream("./src/test/resources/data1.properties");
+				FileInputStream fis = new FileInputStream("./src/test/resources/data1.properties");
 		Properties p =new Properties();
 		p.load(fis);
 		
